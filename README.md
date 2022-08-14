@@ -1,1 +1,1 @@
-# Password-validation
+# Проверка валидности пароля в JS
