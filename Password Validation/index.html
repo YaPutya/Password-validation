@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Pass Valid</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputContainer">
+        <input
+          type="password"
+          id="psw"
+          placeholder="Password"
+          onkeyup="checkPassword(this.value)"
+        />
+        <span id="toggleBtn"></span>
+      </div>
+      <div class="validation">
+        <ul>
+          <li id="lower">Минимум одна строчная буква</li>
+          <li id="upper">Минимум одна заглавная буква</li>
+          <li id="number">Минимум одна цифра</li>
+          <li id="special">Минимум один специальный символ</li>
+          <li id="length">Минимум 8 символов</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="./script.js"></script>
+</html>
